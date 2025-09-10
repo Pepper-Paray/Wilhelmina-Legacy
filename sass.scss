@@ -1,0 +1,64 @@
+$porch-light: #f0f0f0;
+$magnolia: #f5f0f6;
+$legacy-gold: #d4af37;
+$soft-shadow: rgba(0, 0, 0, 0.1);
+$blessed-blue: #3a86ff;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.header {
+  background-color: $porch-light;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px $soft-shadow;
+}
+.content {
+  background-color: $magnolia;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px $soft-shadow;
+}
+.button {
+  background-color: $legacy-gold;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($legacy-gold, 10%);
+  }
+}
+.link {
+  color: $blessed-blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.footer {
+  background-color: $porch-light;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 4px $soft-shadow;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .header, .footer {
+    padding: 5px 0;
+  }
+  .button {
+    padding: 8px 16px;
+  }
+}
+  .content {
+    padding: 10px;
+  }
