@@ -1,0 +1,34 @@
+# dependencies
+/node_modules
+
+# build output
+/build
+/dist
+
+# dotenv environment variables
+# This is where you should store your AWS access key and secret key.
+.env
+.env.local
+
+# misc
+.DS_Store
+.vscode
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# AWS Amplify (if used)
+# If you are using the Amplify CLI, it automatically appends these to your .gitignore.
+# It's good practice to include them explicitly if you are not using the CLI.
+#amplify-do-not-edit-begin
+amplify/#current-cloud-backend
+amplify/.config/local-*
+amplify/logs
+amplify/mock-data
+amplify/backend/amplify-meta.json
+amplify/backend/awscloudformation
+amplify/backend/.temp
+aws-exports.js
+awsconfiguration.json
+#amplify-do-not-edit-end
