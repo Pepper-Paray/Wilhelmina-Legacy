@@ -15,10 +15,30 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="message-board">
+        <div class="title">
+          <h2>Leave a message</h2>
+        </div>
+        <form id="theForm">
+          <textarea
+            class="message"
+            id="userInput"
+            placeholder="Enter your message here..."
+          ></textarea
+          ><br />
+          <input type="submit" value="Submit" />
+        </form>
+        <div class="display-area">
+          <h3>Existing Messages:</h3>
+          <p id="display"></p>
+        </div>
+      </section>
+    </main>
     <footer>
       In Memory of Wilhelmina Pepper Givens <br />
       1941 - 2009 &copy; 2025 Pepper-Paray and march cohart all rights reserved.
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
