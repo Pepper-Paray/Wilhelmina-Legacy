@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { TextField, Button, Card, CardContent, Typography } from '@mui/material';
@@ -34,7 +33,7 @@ const MessageBoard = () => {
   }, []);
 
   return (
-    <Card>
+    <Card sx={{ maxWidth: 500, margin: '2rem auto' }}>
       <CardContent>
         <Typography variant="h5">Message Board</Typography>
         <TextField
@@ -46,7 +45,7 @@ const MessageBoard = () => {
         <Button onClick={postMessage} variant="contained" color="primary" sx={{ mt: 2 }}>
           Post
         </Button>
-        <div>
+        <div style={{ marginTop: '1rem' }}>
           {messages.map(msg => (
             <Typography key={msg.id.S}>{msg.text.S}</Typography>
           ))}
