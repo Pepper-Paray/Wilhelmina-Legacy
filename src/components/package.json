@@ -1,22 +1,29 @@
 {
-"name": "mina-light-backend",
-"version": "1.0.0",
-"description": "Mina Light Backend",
-"main": "index.js",
-"type": "module",
-"scripts": {
-"start": "node index.js",
-"test": "vitest"
-},
-"dependencies": {
+  "name": "mina-light-backend",
+  "version": "1.0.0",
+  "description": "Mina Light Backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "restart": "node index.js",
+    "test": "vitest"
+  },
+  "dependencies": {
     "aws-sdk/client-dynamodb": "^3.379.0",
     "aws-sdk/lib-dynamodb": "^3.379.0",
     "aws-sdk/util-dynamodb": "^3.379.0"
-},
-"devDependencies": {
+  },
+  "devDependencies": {
     "vitest": "^0.34.3"
-},
-"keywords": ["aws", "dynamodb", "backend", "mina"],
-"author": "Pepper-Paray",
-"license": "MIT"
+  },
+  "keywords": [
+    "aws",
+    "dynamodb",
+    "backend",
+    "mina"
+  ],
+  "author": "Pepper-Paray",
+  "license": "MIT"
 }
