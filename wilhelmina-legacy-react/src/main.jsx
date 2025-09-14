@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App'; // or MessageForm if that's your main component
+import MessageForm from './components/MessageForm'; // adjust path if needed
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
-
+root.render(<MessageForm onSubmit={yourSubmitFunction} submitting={false} />);
