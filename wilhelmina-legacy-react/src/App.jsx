@@ -2,7 +2,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import MessageBoard from './components/MessageBoard';
+import MessageForm from './components/MessageForm';
+import message from './components/messages.ts';
+import Contact from './components/Contact';
 
 function Home() {
   return (
@@ -47,7 +49,7 @@ function About() {
 }
 
 function Contact() {
-  return <MessageBoard />;
+  return <MessageForm/>;
 }
 
 function App() {
