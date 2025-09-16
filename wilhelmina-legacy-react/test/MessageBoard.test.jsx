@@ -1,7 +1,7 @@
 
 import { render, screen, fireEvent } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
-import MessageBoard from './MessageBoard';
+import MessageBoard from '../src/components/MessageBoard';
 import React from 'react';
 
 describe('MessageBoard', () => {

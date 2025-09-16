@@ -1,10 +1,10 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
 import MessageForm from './components/MessageForm';
 import message from './components/messages.ts';
-import Contact from './components/Contact';
+import Contact from '../components/Contact.js';
 
 function Home() {
   return (
