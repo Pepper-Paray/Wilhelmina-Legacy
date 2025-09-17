@@ -1,17 +1,11 @@
-
 import { useState } from 'react';
 import TextField from '@mui/material/TextField';
 
-interface MessageFormProps {
-  onSubmit: (text: string) => Promise<void>;
-  submitting: boolean;
-}
-
-export default function MessageForm({ onSubmit, submitting }: MessageFormProps) {
+export default function MessageForm({ onSubmit, submitting }) {
   const [text, setText] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     await onSubmit(text);
     setSubmitted(true);
@@ -42,3 +36,4 @@ export default function MessageForm({ onSubmit, submitting }: MessageFormProps) 
     </div>
   );
 }
+
